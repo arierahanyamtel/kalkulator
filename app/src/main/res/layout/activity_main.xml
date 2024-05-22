@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kalkulator"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorBgMenu"/>
+    <Switch
+        android:id="@+id/switchDarkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:thumb="@drawable/ic_dark_mode"
+        android:thumbTint="@color/colorButtonTextAction"
+        android:track="@drawable/track_dark_mode"
+        />
+
+    <TextView
+        android:id="@+id/text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22mm"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="end"
+        android:textColor="@color/colorTextResult"
+        android:textSize="30sp" />
+
+    <!-- TextView to display result -->
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textAlignment="textEnd"
+        android:layout_below="@id/text_input"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/colorTextResult"
+        android:text="0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="56dp"
+            android:paddingTop="29dp"
+            android:paddingStart="29dp"
+            android:paddingEnd="29dp"
+            android:paddingBottom="60dp"
+            android:background="@color/colorBgGrid"
+            android:columnCount="4"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button_clear"
+                style="@style/button_action"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/button_open_kurung"
+                style="@style/button_action"
+                android:text="(" />
+
+            <Button
+                android:id="@+id/button_close_kurung"
+                style="@style/button_action"
+                android:text=")" />
+
+            <Button
+                android:id="@+id/button_bagi"
+                style="@style/button_action"
+                android:text="/" />
+
+
+
+            <Button
+                android:id="@+id/button_7"
+                style="@style/button_number"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/button_8"
+                style="@style/button_number"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/button_9"
+                style="@style/button_number"
+                android:text="9" />
+            <Button
+                android:id="@+id/button_kali"
+                style="@style/button_action"
+                android:text="*" />
+
+            <Button
+                android:id="@+id/button_4"
+                style="@style/button_number"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/button_5"
+                style="@style/button_number"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/button_6"
+                style="@style/button_number"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/button_tambah"
+                style="@style/button_action"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/button_1"
+                style="@style/button_number"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/button_2"
+                style="@style/button_number"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/button_3"
+                style="@style/button_number"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/button_kurang"
+                style="@style/button_action"
+                android:text="-" />
+            <Button
+                android:id="@+id/button_dot"
+                style="@style/button_number"
+                android:text="." />
+            <Button
+                android:id="@+id/button_0"
+                style="@style/button_number"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/button_back"
+                style="@style/button_action"
+                android:text=""
+                android:drawableLeft="@drawable/ic_back"
+                android:drawablePadding="8dp"
+                android:paddingStart="25dp"
+                android:drawableTint="@color/colorButtonNumber"
+                />
+
+            <Button
+                android:id="@+id/button_samadengan"
+                style="@style/button_action"
+                android:text="=" />
+
+        </GridLayout>
+    </RelativeLayout>
+</RelativeLayout>

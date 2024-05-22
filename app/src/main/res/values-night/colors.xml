@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorButtonTextAction">#FF5722</color>
+    <color name="colorButtonNumber">#FFFFFF</color>
+    <color name="colorButtonBg">#3d3d3d</color>
+    <color name="colorBgGrid">#212121</color>
+    <color name="colorPrimary">#181818</color>
+    <color name="colorTextResult">#FFFFFF</color>
+</resources>
